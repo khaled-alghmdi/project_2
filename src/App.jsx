@@ -12,7 +12,7 @@ const App = () => {
     setError(null);
     
     try {
-      const response = await fetch(`https://rndomuser.me/api/?results=${count}`);
+      const response = await fetch(`https://randomuser.me/api/?results=${count}`);
       
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
